@@ -6,6 +6,7 @@ public class GnomesPerSec : MonoBehaviour {
 	public UnityEngine.UI.Text gpsDisplay;
 	public Click click;
 	public ItemManager[] items;
+	public Highscore giveScore;
 
 	void Start(){
 		StartCoroutine (AutoTick ());
@@ -25,6 +26,7 @@ public class GnomesPerSec : MonoBehaviour {
 
 	public void AutoGnomesPerSec (){
 		click.gold += GetGnomesPerSec () / 10;
+		giveScore.AddScore (GetGnomesPerSec () / 10);
 	}
 
 	IEnumerator AutoTick(){

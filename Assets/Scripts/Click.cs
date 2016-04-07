@@ -10,8 +10,8 @@ public class Click : MonoBehaviour {
 	public ParticleSystem kalleParticle;
 	public LevelUpScript levelUp;
 	public LevelUpScript giveLevel;
+	public Highscore giveScore;
 	//Vector3 temp = Vector3.one;
-
 
 
 	void Start()
@@ -34,6 +34,8 @@ public class Click : MonoBehaviour {
 		kalleParticle.Play ();
 
 		levelUp.addXp ();
+
+		giveScore.AddScore (goldPerClick);
 	}
 		
 
