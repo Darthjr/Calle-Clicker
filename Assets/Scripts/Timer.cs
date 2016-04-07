@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour {
 
 		timerText.text = minutes + ":" + seconds + " sec";
 
-		if (minutes == "1") 
+		if (minutes == "3") 
 			{
 				finished = true;
 				timerText.color = Color.red;
