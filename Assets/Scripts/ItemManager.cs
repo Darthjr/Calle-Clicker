@@ -10,9 +10,17 @@ public class ItemManager : MonoBehaviour {
 	public int count;
 	public string itemName;
 	private float baseCost;
+	public string identifer;
 
 	void Start (){
 		baseCost = cost;
+
+		// Don't enter here if it's timed level (scene 2)
+		if (Application.loadedLevel != 2) {
+
+			cost = PlayerPrefs.GetFloat ("savedCost" + identifer.ToString(), cost);
+			count = PlayerPrefs.GetInt ("savedCount" + identifer.ToString(), count);
+		}
 	}
 
 	void Update(){
@@ -23,8 +31,11 @@ public class ItemManager : MonoBehaviour {
 		if (click.gold >= cost) {
 			click.gold -= cost;
 			count++;
-			cost = Mathf.Round (baseCost * Mathf.Pow(1.50f, count));
-
+			cost = Mathf.Round (baseCost * Mathf.Pow(1.40f, count));
+			if (Application.loadedLevel != 2) {
+				PlayerPrefs.SetFloat ("savedCost" + identifer.ToString (), cost);
+				PlayerPrefs.SetInt ("savedCount" + identifer.ToString (), count);
+			}
 		}
 
 	}

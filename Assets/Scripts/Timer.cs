@@ -8,9 +8,11 @@ public class Timer : MonoBehaviour {
 	private float startTime;
 	private bool finished = false;
 	public Highscore highscore;
+	public Menu Changelvl;
 
 	void Start () {
 		startTime = Time.time;
+		StartCoroutine (DelayTime ());
 	}
 
 	void Update () {
@@ -22,13 +24,20 @@ public class Timer : MonoBehaviour {
 
 		timerText.text = minutes + ":" + seconds + " sec";
 
-		if (minutes == "3") 
+		if (minutes == "2") 
 			{
 				finished = true;
 				timerText.color = Color.red;
 				highscore.SetIsFinnished (true);
+
 			}
-		
 		}
+	}
+
+	IEnumerator DelayTime()
+	{
+		yield return new WaitForSeconds (125);
+		Debug.Log ("Chamge Scene");
+		Changelvl.LeaveGame ("MainMenu");
 	}
 }

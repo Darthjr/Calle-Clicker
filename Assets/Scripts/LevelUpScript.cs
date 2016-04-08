@@ -12,17 +12,23 @@ public class LevelUpScript : MonoBehaviour {
 	public List<Sprite> faces = new List<Sprite> (); 
 	public List<string> levelRank = new List<string> (); 
 	public UnityEngine.UI.Text levelDisplay;
+	public GameObject mLady;
 
 	public Image kalleSprite;
 	public Image xpBar;
 
 	void Start (){
 		xpBar.fillAmount = 0.0f;
+		mLady.SetActive (false);
 	}
 
 	void Update(){
 		if (levelRank.Count >= level) {
 			levelDisplay.text = levelRank [level - 1];
+		}
+		if (level == 10) 
+		{
+			mLady.SetActive (true);
 		}
 	}
 

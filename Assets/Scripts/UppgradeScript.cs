@@ -24,7 +24,7 @@ public class UppgradeScript : MonoBehaviour {
 			click.gold -= cost;
 			count += 1;
 			click.goldPerClick += clickPower;
-			cost = Mathf.Round (baseCost * Mathf.Pow (1.45f, count));
+			cost = Mathf.Round (baseCost * Mathf.Pow (1.60f, count));
 
 		}
 	}

@@ -25,9 +25,9 @@ public class GnomesPerSec : MonoBehaviour {
 	}
 
 	public void AutoGnomesPerSec (){
-		click.gold += GetGnomesPerSec () / 10;
-		giveScore.AddScore (GetGnomesPerSec () / 10);
-	}
+			click.gold += GetGnomesPerSec () / 10;
+			giveScore.AddScore (GetGnomesPerSec () / 10);
+		} 
 
 	IEnumerator AutoTick(){
 		while (true) {

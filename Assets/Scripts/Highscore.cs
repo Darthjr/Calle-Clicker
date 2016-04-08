@@ -8,15 +8,20 @@ public class Highscore : MonoBehaviour {
 	public UnityEngine.UI.Text scoreText;
 	float highscore = 0f;
 	float score = 0f;
+	string key;
 
 	void Start () 
 	{
-		highscore = PlayerPrefs.GetFloat ("Highscore", 0);
+		key = "Highscore" + Application.loadedLevel;
+
+		highscore = PlayerPrefs.GetFloat (key, 0);
+
+		PlayerPrefs.GetFloat ("Highscore1");
 	}
 
 	void Update () 
 	{
-		highscoreText.text = "Highscore: " + (int) highscore;
+		highscoreText.text = "Highscore: " + (int)highscore;
 		scoreText.text = "Score: " + (int)score;
 	
 	}
@@ -46,7 +51,7 @@ public class Highscore : MonoBehaviour {
 	{
 		if(score > highscore)
 		{
-			PlayerPrefs.SetFloat ("Highscore", score);
+			PlayerPrefs.SetFloat (key, score);
 			highscore = score;
 		}
 	}

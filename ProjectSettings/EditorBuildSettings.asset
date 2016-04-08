@@ -10,4 +10,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scene/NormalCalle.unity
   - enabled: 1
-    path: Assets/_Scene/Comp/CompCalle.unity
+    path: Assets/_Scene/CompCalle.unity
+  - enabled: 1
+    path: Assets/_Scene/Donate.unity
+  - enabled: 1
+    path: Assets/_Scene/Stats.unity
+  - enabled: 1
+    path: Assets/_Scene/Tutorial.unity

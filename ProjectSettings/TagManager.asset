@@ -15,7 +15,7 @@ TagManager:
   - 
   - 
   - Sprite
-  - 
+  - Rays
   - 
   - 
   - 
@@ -41,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3238496403
+    locked: 0
+  - name: Rays
+    uniqueID: 561822307
+    locked: 0
+  - name: UI
+    uniqueID: 3033755971
+    locked: 0
+  - name: Sprite
+    uniqueID: 2221119677
     locked: 0

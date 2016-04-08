@@ -7,4 +7,9 @@ public class Menu : MonoBehaviour {
 	{
 		Application.LoadLevel (sceneName);
 	}
+
+	public void LeaveGame(string leaveGame)
+	{
+		Application.LoadLevel (leaveGame);
+	}
 }
