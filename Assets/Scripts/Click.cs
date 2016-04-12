@@ -14,17 +14,27 @@ public class Click : MonoBehaviour {
 	public LevelUpScript giveLevel;
 	public Highscore giveScore;
 	public clickTimes clicksTotal;
+	public string identifer;
 
 
 
 	void Start()
 	{
 		//totalClicks = PlayerPrefs.GetFloat ("Clicks", 0);
+		if (Application.loadedLevel != 2) {
+			goldPerClick = PlayerPrefs.GetInt ("SavedGoldPerClick" + identifer.ToString(), goldPerClick);
+			gold = PlayerPrefs.GetFloat ("Gold" + identifer.ToString(), gold);
+		}
 	}
 
 	void Update() {
 		goldDisplay.text = "Callar: " + KalleConverter.Instance.CurrencyIntoString (gold, false, false);
 		gpc.text = KalleConverter.Instance.CurrencyIntoString(goldPerClick, false, true) + " Calle/click";
+
+		if (Application.loadedLevel != 2) {
+			PlayerPrefs.SetFloat ("Gold" + identifer.ToString (), gold);
+			PlayerPrefs.SetInt ("SavedGoldPerClick" + identifer.ToString (), goldPerClick);
+			}
 
 		if(Input.GetKeyDown ("x")) 
 		{
@@ -41,6 +51,11 @@ public class Click : MonoBehaviour {
 
 		giveScore.AddScore (goldPerClick);
 
-		clicksTotal.AddClick (goldPerClick);
+		clicksTotal.AddClick (1);
+
+		if (Application.loadedLevel != 2) {
+			PlayerPrefs.SetInt ("SavedGoldPerClick" + identifer.ToString (), goldPerClick);
+		}
+
 	}
 }

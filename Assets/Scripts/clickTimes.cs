@@ -26,10 +26,11 @@ public class clickTimes : MonoBehaviour {
 	
 	void NewClickScore(float clicks)
 	{
-		if(clicks > totalClicks)
-		{
-			PlayerPrefs.SetFloat ("Clicks", clicks);
-			totalClicks = clicks;
+		if (clicks < totalClicks) {
+			totalClicks++;
 		}
+		PlayerPrefs.SetFloat ("Clicks", totalClicks);
+		if (clicks > totalClicks)
+			totalClicks = clicks;
 	}
 }

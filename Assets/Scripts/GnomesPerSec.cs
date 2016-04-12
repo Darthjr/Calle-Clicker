@@ -7,6 +7,7 @@ public class GnomesPerSec : MonoBehaviour {
 	public Click click;
 	public ItemManager[] items;
 	public Highscore giveScore;
+	public LevelUpScript giveXP;
 
 	void Start(){
 		StartCoroutine (AutoTick ());
@@ -27,6 +28,7 @@ public class GnomesPerSec : MonoBehaviour {
 	public void AutoGnomesPerSec (){
 			click.gold += GetGnomesPerSec () / 10;
 			giveScore.AddScore (GetGnomesPerSec () / 10);
+			giveXP.addXpPerSec ();
 		} 
 
 	IEnumerator AutoTick(){

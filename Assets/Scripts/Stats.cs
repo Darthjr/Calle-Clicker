@@ -9,8 +9,8 @@ public class Stats : MonoBehaviour {
 
 	void Start()
 	{
-		timedHighscore.text = "Timed Highscore: " + PlayerPrefs.GetFloat ("Highscore2", 0).ToString();
-		normalHighscore.text = "Normal Highscore: " + PlayerPrefs.GetFloat ("Highscore1", 0).ToString ();
-		totalClicks.text = "Total Clicks: " + PlayerPrefs.GetFloat ("Clicks", 0).ToString ();
+		timedHighscore.text = "Timed Highscore: " + KalleConverter.Instance.CurrencyIntoString (PlayerPrefs.GetFloat ("Highscore2", 0), false, false); 
+		normalHighscore.text = "Normal Highscore: " + KalleConverter.Instance.CurrencyIntoString (PlayerPrefs.GetFloat ("Highscore1", 0), false, false);  
+		totalClicks.text = "Total Clicks: " + KalleConverter.Instance.CurrencyIntoString (PlayerPrefs.GetFloat ("Clicks", 0), false, false);
 	}
 }

@@ -47,6 +47,12 @@ public class Highscore : MonoBehaviour {
 		}
 	}
 
+	public void deletScore()
+	{
+		PlayerPrefs.DeleteAll ();
+	}
+
+
 	void NewScore(float score)
 	{
 		if(score > highscore)

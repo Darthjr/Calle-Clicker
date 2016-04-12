@@ -135,10 +135,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 951117040}
-  cost: 100000
+  cost2: 0
   count: 0
   clickPower: 6969
   itemName: Kalle Anka
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &6187554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 110665646}
+  m_Content: {fileID: 0}
   m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
@@ -526,6 +529,9 @@ MonoBehaviour:
   tickValue: 15
   count: 0
   itemName: KalleNalle
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &37390514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,10 +1104,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 35759418}
-  cost: 50
+  cost2: 0
   count: 0
   clickPower: 3
   itemName: 3+ Carl
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &226170526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,6 +1335,9 @@ MonoBehaviour:
   tickValue: 3
   count: 0
   itemName: Clone x3
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &333084938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1369,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -5.704468, y: 2.0695496}
+  m_AnchoredPosition: {x: -4.7, y: -3.54}
   m_SizeDelta: {x: 442, y: 81.00159}
   m_Pivot: {x: 0.5000093, y: 0.499997}
 --- !u!114 &333084940
@@ -1381,7 +1393,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1d65fae222a164640acf120d488d5cf5, type: 3}
-    m_FontSize: 36
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1433,7 +1445,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 348, y: 25}
+  m_AnchoredPosition: {x: 325, y: 25}
   m_SizeDelta: {x: 190, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361075598
@@ -1535,15 +1547,16 @@ MonoBehaviour:
   gpsDisplay: {fileID: 508891894}
   click: {fileID: 2083042384}
   items:
-  - {fileID: 1946095887}
-  - {fileID: 266957285}
-  - {fileID: 1592358083}
-  - {fileID: 37390513}
-  - {fileID: 2144334880}
-  - {fileID: 1660730098}
-  - {fileID: 998799450}
-  - {fileID: 666840756}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   giveScore: {fileID: 1341579241}
+  giveXP: {fileID: 0}
 --- !u!1 &373811147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,10 +1607,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 1221553004}
-  cost: 10000
+  cost2: 0
   count: 0
   clickPower: 1000
   itemName: Kalle with C
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &373811150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2318,6 +2334,9 @@ MonoBehaviour:
   tickValue: 1337
   count: 0
   itemName: KAAAAAARL?
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &666840757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2721,10 +2740,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 811934629}
-  cost: 10
+  cost2: 30
   count: 0
   clickPower: 1
   itemName: 1+ Carl
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &761941230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,7 +2785,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1d65fae222a164640acf120d488d5cf5, type: 3}
-    m_FontSize: 36
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2795,7 +2817,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -6.2230835, y: 3.0420532}
+  m_AnchoredPosition: {x: -5.22, y: -2.7}
   m_SizeDelta: {x: 442, y: 91.00244}
   m_Pivot: {x: 0.5000093, y: 0.499997}
 --- !u!1 &811934627
@@ -3095,10 +3117,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 1909637957}
-  cost: 130
+  cost2: 0
   count: 0
   clickPower: 10
   itemName: Super Click
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &956442263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3311,6 +3336,9 @@ MonoBehaviour:
   tickValue: 450
   count: 0
   itemName: Karl?
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &998799451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3524,10 +3552,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 1765137372}
-  cost: 1000
+  cost2: 0
   count: 0
   clickPower: 100
   itemName: Carl^100
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1088749707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6103,10 +6134,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 695203451}
-  cost: 5000
+  cost2: 0
   count: 0
   clickPower: 200
   itemName: Carl Zone
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1519546332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6217,13 +6251,13 @@ RectTransform:
   m_GameObject: {fileID: 1521121164}
   m_LocalRotation: {x: 0, y: 0, z: -0.0018521094, w: 0.99999833}
   m_LocalPosition: {x: 0, y: 0, z: 1.6953126}
-  m_LocalScale: {x: 0.016207455, y: 0.016207453, z: 0.016207455}
+  m_LocalScale: {x: 0.02354954, y: 0.02005729, z: 0.016207455}
   m_Children: []
   m_Father: {fileID: 2024495495}
   m_RootOrder: 3
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.71, y: -2.49}
+  m_AnchoredPosition: {x: -4.49, y: 5.83}
   m_SizeDelta: {x: 442, y: 91.00244}
   m_Pivot: {x: 0.5000093, y: 0.499997}
 --- !u!114 &1521121166
@@ -6319,6 +6353,9 @@ MonoBehaviour:
   tickValue: 5
   count: 0
   itemName: 'Edvard Persson '
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1592358084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6454,10 +6491,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 376433365}
-  cost: 500
+  cost2: 0
   count: 0
   clickPower: 40
   itemName: Ultra Click
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1607115619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6597,6 +6637,9 @@ MonoBehaviour:
   tickValue: 100
   count: 0
   itemName: Give Calle Steroids
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1660730099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6911,13 +6954,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Calle\n\u2190"
+  m_Text: "\t\t\n\n\n\n\n\n\t\t\t\t\t\t\tCalle\n\t\t\t\t\t\t\t\u2190"
 --- !u!222 &1745105595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6938,8 +6981,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 187, y: 40}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3, y: -69}
+  m_SizeDelta: {x: 1116, y: 679}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1748797576
 GameObject:
@@ -7282,6 +7325,10 @@ MonoBehaviour:
   - Calle God
   - Vintage Calle
   levelDisplay: {fileID: 1403070434}
+  identifer: 
+  width: 320
+  height: 260
+  position: {x: 10, y: 5, z: 0}
   mLady: {fileID: 1883298593}
   kalleSprite: {fileID: 2083042386}
   xpBar: {fileID: 546046614}
@@ -7510,6 +7557,9 @@ MonoBehaviour:
   tickValue: 1
   count: 0
   itemName: Clone Calle
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2024495494
 GameObject:
   m_ObjectHideFlags: 0
@@ -7667,6 +7717,7 @@ MonoBehaviour:
   giveLevel: {fileID: 1929837411}
   giveScore: {fileID: 1341579241}
   clicksTotal: {fileID: 125386889}
+  identifer: 
 --- !u!114 &2083042385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7969,6 +8020,9 @@ MonoBehaviour:
   tickValue: 40
   count: 0
   itemName: Calle with K
+  identifer: 
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &2144334881
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -393,7 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 93751769}
   click: {fileID: 2083042384}
-  cost: 550
+  cost: 460
   tickValue: 10
   count: 0
   itemName: KalleNalle
@@ -633,7 +633,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 8, y: -6}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 800, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &67252796
@@ -1576,7 +1576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 35759418}
-  cost2: 300
+  cost2: 100
   count: 0
   clickPower: 3
   itemName: 3+ Carl
@@ -1786,10 +1786,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 266624058}
-  cost2: 1000
+  cost2: 100
   count: 0
-  clickPower: 10
-  itemName: Ultra Click
+  clickPower: 3
+  itemName: 3+ Carl
   identifer: 4
   standard: {r: 1, g: 0, b: 0, a: 0}
   affordable: {r: 1, g: 0.2352941, b: 0.291, a: 0.934}
@@ -1878,81 +1878,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241412058}
---- !u!1 &246672620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 246672621}
-  - 222: {fileID: 246672623}
-  - 114: {fileID: 246672622}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &246672621
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246672620}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3624994, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1300952818}
-  m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &246672622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246672620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 1d65fae222a164640acf120d488d5cf5, type: 3}
-    m_FontSize: 65
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Mute
-
-'
---- !u!222 &246672623
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246672620}
 --- !u!1 &266624056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,7 +2087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 378080246}
   click: {fileID: 2083042384}
-  cost: 150
+  cost: 80
   tickValue: 3
   count: 0
   itemName: Clone x3
@@ -2300,7 +2225,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 282, y: 403}
+  m_AnchoredPosition: {x: -303, y: 138}
   m_SizeDelta: {x: 442, y: -535.9984}
   m_Pivot: {x: 0.5000093, y: 0.499997}
 --- !u!114 &333084940
@@ -2329,7 +2254,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2342,46 +2267,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 333084938}
---- !u!1 &334524900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 334524902}
-  - 114: {fileID: 334524901}
-  m_Layer: 0
-  m_Name: MuteHolder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &334524901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334524900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f90d5a6385c3394eb6cbf5ccba26e9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMute: 0
---- !u!4 &334524902
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334524900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4981079, y: 0.45394897, z: 1.3398438}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 602127728}
-  m_RootOrder: 4
 --- !u!1 &361075595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,9 +2299,9 @@ RectTransform:
   - {fileID: 508891893}
   m_Father: {fileID: 849350801}
   m_RootOrder: 7
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -333, y: -27}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 348, y: 25}
   m_SizeDelta: {x: 190, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361075597
@@ -2881,10 +2766,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 552120758}
-  cost2: 500
+  cost2: 100
   count: 0
-  clickPower: 5
-  itemName: Super Click
+  clickPower: 3
+  itemName: 3+ Carl
   identifer: 3
   standard: {r: 1, g: 0, b: 0, a: 0}
   affordable: {r: 1, g: 0.2352941, b: 0.291, a: 0.934}
@@ -3748,8 +3633,6 @@ Transform:
   - {fileID: 1929837412}
   - {fileID: 448258756}
   - {fileID: 1458257200}
-  - {fileID: 334524902}
-  - {fileID: 1756583755}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &608578652
@@ -4179,7 +4062,7 @@ MonoBehaviour:
   cost: 100000
   tickValue: 1000
   count: 0
-  itemName: Gotta Go fast
+  itemName: KAAAAAARL?
   identifer: 8
   standard: {r: 0.012221107, g: 0.8310345, b: 0, a: 0}
   affordable: {r: 0.012221107, g: 0.8310345, b: 0.28088957, a: 0.797}
@@ -4579,10 +4462,10 @@ RectTransform:
   - {fileID: 974058670}
   m_Father: {fileID: 849350801}
   m_RootOrder: 8
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 333, y: -27}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 75}
+  m_SizeDelta: {x: 190, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735245523
 MonoBehaviour:
@@ -4861,7 +4744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 811934629}
-  cost2: 100
+  cost2: 30
   count: 0
   clickPower: 1
   itemName: 1+ Carl
@@ -4978,7 +4861,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5005,7 +4888,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -272, y: 398}
+  m_AnchoredPosition: {x: -333, y: 198}
   m_SizeDelta: {x: 442, y: -525.99756}
   m_Pivot: {x: 0.5000093, y: 0.499997}
 --- !u!1 &788338910
@@ -5037,10 +4920,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1352134110}
   m_RootOrder: 0
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -200, y: 54.5}
-  m_SizeDelta: {x: 400, y: 109}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788338912
 MonoBehaviour:
@@ -5240,10 +5123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 538742956}
-  cost2: 100000
+  cost2: 100
   count: 0
-  clickPower: 50
-  itemName: Give Calle Steroids
+  clickPower: 3
+  itemName: 3+ Carl
   identifer: 6
   standard: {r: 1, g: 0, b: 0, a: 0}
   affordable: {r: 1, g: 0.2352941, b: 0.291, a: 0.934}
@@ -5407,7 +5290,6 @@ RectTransform:
   - {fileID: 546046613}
   - {fileID: 999952307}
   - {fileID: 2083042383}
-  - {fileID: 1300952818}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
@@ -5850,9 +5732,9 @@ RectTransform:
   m_Father: {fileID: 735245521}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3, y: 2}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -254, y: -25}
+  m_SizeDelta: {x: 296, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974058671
 MonoBehaviour:
@@ -6111,7 +5993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 2101548268}
   click: {fileID: 2083042384}
-  cost: 6000
+  cost: 8000
   tickValue: 100
   count: 0
   itemName: Karl?
@@ -6234,7 +6116,7 @@ RectTransform:
   m_RootOrder: 12
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 3, y: -97.50183}
   m_SizeDelta: {x: 442, y: 85.00244}
   m_Pivot: {x: 0.5000093, y: 0.499997}
 --- !u!114 &999952308
@@ -6702,10 +6584,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 717731438}
-  cost2: 4000
+  cost2: 100
   count: 0
-  clickPower: 20
-  itemName: Kalle with C
+  clickPower: 3
+  itemName: 3+ Carl
   identifer: 5
   standard: {r: 1, g: 0, b: 0, a: 0}
   affordable: {r: 1, g: 0.2352941, b: 0.291, a: 0.934}
@@ -7431,10 +7313,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 1894897853}
-  cost2: 10000000
+  cost2: 100
   count: 0
-  clickPower: 1000
-  itemName: Calle And
+  clickPower: 3
+  itemName: 3+ Carl
   identifer: 8
   standard: {r: 1, g: 0, b: 0, a: 0}
   affordable: {r: 1, g: 0.2352941, b: 0.291, a: 0.934}
@@ -7839,127 +7721,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1300952817
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 1300952818}
-  - 222: {fileID: 1300952822}
-  - 114: {fileID: 1300952821}
-  - 114: {fileID: 1300952820}
-  m_Layer: 5
-  m_Name: Mute
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1300952818
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300952817}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.40203127, y: 0.49999225, z: 1}
-  m_Children:
-  - {fileID: 246672621}
-  m_Father: {fileID: 849350801}
-  m_RootOrder: 14
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 327, y: -96}
-  m_SizeDelta: {x: 400, y: 109}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1300952820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300952817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1300952821}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 334524901}
-        m_MethodName: Mute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MainMenu
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1300952821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300952817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 72d3c005e12c4e94e9981b3925d90279, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1300952822
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300952817}
 --- !u!1 &1306155211
 GameObject:
   m_ObjectHideFlags: 0
@@ -9666,7 +9427,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -335, y: -707}
+  m_AnchoredPosition: {x: -335, y: 89.5}
   m_SizeDelta: {x: 400, y: 109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1352134111
@@ -10707,7 +10468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 1748797578}
   click: {fileID: 2083042384}
-  cost: 250
+  cost: 200
   tickValue: 5
   count: 0
   itemName: 'Edvard Persson '
@@ -11016,10 +10777,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 1013500275}
   click: {fileID: 2083042384}
-  cost: 2500
+  cost: 2000
   tickValue: 50
   count: 0
-  itemName: 6h Energy boost
+  itemName: Give Calle Steroids
   identifer: 6
   standard: {r: 0.012221107, g: 0.8310345, b: 0, a: 0}
   affordable: {r: 0.012221107, g: 0.8310345, b: 0.28088957, a: 0.797}
@@ -11590,7 +11351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\t\n\n\t\n\n\n\n\t\t\t\t\t\t\tCalle\n\t\t\t\t\t\t\t\u2190"
+  m_Text: "\t\t\n\n\n\n\t\t\t\t\t\t\tCalle\n\t\t\t\t\t\t\t\u2190"
 --- !u!222 &1745105595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11611,8 +11372,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: 17}
-  m_SizeDelta: {x: 764, y: 525}
+  m_AnchoredPosition: {x: 1, y: -100}
+  m_SizeDelta: {x: 767, y: 592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1748797576
 GameObject:
@@ -11771,79 +11532,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1756583754
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1756583755}
-  - 114: {fileID: 1756583756}
-  m_Layer: 0
-  m_Name: Enable Buttons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1756583755
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1756583754}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8459473, y: 0.057495117, z: 1.6953125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 602127728}
-  m_RootOrder: 5
---- !u!114 &1756583756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1756583754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c43d2d133c41b474a9b82f5d67b516d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goldEnable: {fileID: 1458257199}
-  goldEnableGold: {fileID: 2083042384}
-  checkActive1: 0
-  checkActive2: 0
-  checkActive3: 0
-  checkActive4: 0
-  checkActive5: 0
-  checkActive6: 0
-  checkActive7: 0
-  checkActive8: 0
-  checkActiveUpgrade1: 0
-  checkActiveUpgrade2: 0
-  checkActiveUpgrade3: 0
-  checkActiveUpgrade4: 0
-  checkActiveUpgrade5: 0
-  checkActiveUpgrade6: 0
-  checkActiveUpgrade7: 0
-  checkActiveUpgrade8: 0
-  item1: {fileID: 1946095882}
-  item2: {fileID: 266957280}
-  item3: {fileID: 1592358081}
-  item4: {fileID: 37390511}
-  item5: {fileID: 2144334878}
-  item6: {fileID: 1660730096}
-  item7: {fileID: 998799448}
-  item8: {fileID: 666840754}
-  Upgrade1: {fileID: 749796660}
-  Upgrade2: {fileID: 226170523}
-  Upgrade3: {fileID: 495026193}
-  Upgrade4: {fileID: 241412058}
-  Upgrade5: {fileID: 1106665286}
-  Upgrade6: {fileID: 828360008}
-  Upgrade7: {fileID: 1916398375}
-  Upgrade8: {fileID: 1268049573}
 --- !u!1 &1792002941
 GameObject:
   m_ObjectHideFlags: 0
@@ -12436,10 +12124,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   click: {fileID: 2083042384}
   itemInfo: {fileID: 706828236}
-  cost2: 1000000
+  cost2: 100
   count: 0
-  clickPower: 100
-  itemName: Carl Zone
+  clickPower: 3
+  itemName: 3+ Carl
   identifer: 7
   standard: {r: 1, g: 0, b: 0, a: 0}
   affordable: {r: 1, g: 0.2352941, b: 0.291, a: 0.934}
@@ -12558,14 +12246,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   xp: 1
-  limit: 30
+  limit: 10
   faces:
   - {fileID: 21300000, guid: a782ddd9c0866d644aad8dda913ea77e, type: 3}
-  - {fileID: 21300000, guid: 4fc470277d8e8de4e84c75110b8413bb, type: 3}
-  - {fileID: 21300000, guid: 58267056945c468458c188ed2458d2a8, type: 3}
-  - {fileID: 21300000, guid: 719818f506ff9c94187870b2ff42c873, type: 3}
-  - {fileID: 21300000, guid: aa5ccfecf3eb1914ab15f03b46bbe1ad, type: 3}
-  - {fileID: 21300000, guid: c7356c90bff47bf4d9a7fd57b23a2b43, type: 3}
+  - {fileID: 21300000, guid: e00e2ad7fb2c1f04bb6f000389ca6119, type: 3}
+  - {fileID: 21300000, guid: 450dad326d64c084ab2aae9b923f2565, type: 3}
+  - {fileID: 21300000, guid: dacf2ded3c7a67249ac15ac1f6ea277b, type: 3}
+  - {fileID: 21300000, guid: 85af2707da3ca3e40b72696440b1f300, type: 3}
+  - {fileID: 21300000, guid: d2fc53df4d172e74691e2204837229d8, type: 3}
   - {fileID: 21300000, guid: 4969fa470bb6a9f4695dd6581c1fe453, type: 3}
   - {fileID: 21300000, guid: de1c605fc6d472e4ba765db38c670817, type: 3}
   - {fileID: 21300000, guid: 8b56e3c69867edd4daeb9f9943054d56, type: 3}
@@ -12578,11 +12266,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ebf3ffa58bac6ab4bb0dd2f6cf4a5565, type: 3}
   levelRank:
   - Calle
-  - Mr Calle
-  - 'Gentelman '
-  - Pink Calle
-  - Holy Calle
-  - Rave Calle
+  - Handsome Calle
+  - Fake Calle
+  - Calle's twin
+  - Fake Calle
+  - Fake Calle
   - Mr Rave
   - Pink Rave
   - Holy Rave
@@ -12823,7 +12511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 624121144}
   click: {fileID: 2083042384}
-  cost: 50
+  cost: 15
   tickValue: 1
   count: 0
   itemName: Clone Calle
@@ -13807,7 +13495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 134026755}
   click: {fileID: 2083042384}
-  cost: 1000
+  cost: 800
   tickValue: 20
   count: 0
   itemName: Calle with K
