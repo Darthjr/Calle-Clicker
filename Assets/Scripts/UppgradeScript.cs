@@ -5,23 +5,32 @@ using UnityEngine.UI;
 public class UppgradeScript : MonoBehaviour {
 
 	public Click click;
-	public UnityEngine.UI.Text itemInfo;
-	public float cost2;
-	public int count = 0;
+
+    public bool isSwipe = true;
+
+    public UnityEngine.UI.Text itemInfo;
+
+    public float cost2;
+
+    public int count = 0;
 	public int clickPower;
-	public string itemName;
+
+    public string itemName;
 	public string identifer;
-	public Color standard;
+
+    public Color standard;
 	public Color affordable;
-	private Slider fillSlider;
+
+    private Slider fillSlider;
 
 	private float baseCost;
 
 	void Start() {
-		baseCost = cost2;
+        isSwipe = true;
+        baseCost = cost2;
 		fillSlider = GetComponentInChildren<Slider> ();
 
-		if (Application.loadedLevel != 2) {
+        if (Application.loadedLevel != 2) {
 			cost2 = PlayerPrefs.GetFloat ("saveCost2Upgrade" + identifer.ToString(), cost2);
 			count = PlayerPrefs.GetInt ("saveCountUpgrade" + identifer.ToString(), count);
 
@@ -29,9 +38,21 @@ public class UppgradeScript : MonoBehaviour {
 	}
 
 	void Update() {
-		itemInfo.text = itemName + "\nCost: " + KalleConverter.Instance.CurrencyIntoString(cost2, false, true) + "\nClicks: +" + clickPower;
 
-		fillSlider.value = click.gold / cost2 * 100;
+        if (isSwipe == true)
+        {
+            itemInfo.text = itemName + "\n" + "\n" + "\n";
+            if (identifer == "5") 
+            {
+                itemInfo.text = "\n" + itemName;
+            }
+        }
+
+        if (isSwipe == false) { 
+		itemInfo.text = itemName + "\nCost: " + KalleConverter.Instance.CurrencyIntoString(cost2, false, true) + "\nClicks: +" + clickPower;
+        }
+
+        fillSlider.value = click.gold / cost2 * 100;
 		if (fillSlider.value >= 100) {
 			GetComponent<Image> ().color = affordable;
 		} else {

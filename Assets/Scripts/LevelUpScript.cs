@@ -13,6 +13,7 @@ public class LevelUpScript : MonoBehaviour {
 	public List<string> levelRank = new List<string> (); 
 	public UnityEngine.UI.Text levelDisplay;
 	public string identifer;
+    public bool reaggeCalleTime = false;
 
 	public float width = 320;
 	public float height = 260;
@@ -26,7 +27,7 @@ public class LevelUpScript : MonoBehaviour {
 		xpBar.fillAmount = 0.0f;
 		mLady.SetActive (false);
 		if (Application.loadedLevel != 2) {
-		xp = PlayerPrefs.GetFloat ("xp" + identifer.ToString(), xp);
+		xp = PlayerPrefs.GetFloat ("xp", xp);
 		level = PlayerPrefs.GetInt ("level" + identifer.ToString(), level);
 		limit = PlayerPrefs.GetFloat ("limit" + identifer.ToString(), limit);
 		}
@@ -35,28 +36,31 @@ public class LevelUpScript : MonoBehaviour {
 	void Update(){
 		if (levelRank.Count >= level) {
 			levelDisplay.text = levelRank [level - 1];
-			kalleSprite.sprite = faces [level - 1];
-		}
+
+            if (reaggeCalleTime == false){
+            kalleSprite.sprite = faces [level - 1];
+            }
+        }
 		if (level == 10) 
 		{
 			mLady.SetActive (true);
 			Vector3 scale = new Vector3 (width, height, 1f);
 			transform.localScale = scale;
 		}
+		PlayerPrefs.SetFloat ("xp", xp);
 	}
 
 	public void addXpPerSec()
 	{
 		xp += 0.01f;
 		xpBar.fillAmount = ((float)xp / (float)limit);
-		PlayerPrefs.SetFloat ("xp" + identifer.ToString (), xp);
 	}
 
 	public void addXp(){
 		xp++;
 		xpBar.fillAmount = ((float)xp / (float)limit);
 		if (Application.loadedLevel != 2) {
-		PlayerPrefs.SetFloat ("xp" + identifer.ToString (), xp);
+		PlayerPrefs.SetFloat ("xp", xp);
 		}
 
 		if(xp >= limit)
@@ -74,7 +78,6 @@ public class LevelUpScript : MonoBehaviour {
 			if (Application.loadedLevel != 2) {
 				PlayerPrefs.SetInt ("level" + identifer.ToString (), level);
 				PlayerPrefs.SetFloat ("limit" + identifer.ToString (), limit);
-				PlayerPrefs.SetFloat ("xp" + identifer.ToString (), xp);
 			}
 		}
 	}

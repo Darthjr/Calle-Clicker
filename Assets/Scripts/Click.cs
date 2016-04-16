@@ -15,10 +15,10 @@ public class Click : MonoBehaviour {
 	public Highscore giveScore;
 	public clickTimes clicksTotal;
 	public string identifer;
+	public SteroidUpgrade punch;
 
 
-
-	void Start()
+    void Start()
 	{
 		//totalClicks = PlayerPrefs.GetFloat ("Clicks", 0);
 		if (Application.loadedLevel != 2) {
@@ -53,7 +53,9 @@ public class Click : MonoBehaviour {
 
 		clicksTotal.AddClick (1);
 
-		if (Application.loadedLevel != 2) {
+        punch.spawnPunch();
+
+        if (Application.loadedLevel != 2) {
 			PlayerPrefs.SetInt ("SavedGoldPerClick" + identifer.ToString (), goldPerClick);
 		}
 

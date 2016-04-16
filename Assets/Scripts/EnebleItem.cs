@@ -3,8 +3,11 @@ using System.Collections;
 
 public class EnebleItem : MonoBehaviour {
 
-	public clickTimes goldEnable;
+    public ShowSwipe showSwipe;
+    public clickTimes goldEnable;
 	public Click goldEnableGold;
+
+    public bool oneTime = false;
 
 	public int checkActive1 = 0;
 	public int checkActive2 = 0;
@@ -14,6 +17,7 @@ public class EnebleItem : MonoBehaviour {
 	public int checkActive6 = 0;
 	public int checkActive7 = 0;
 	public int checkActive8 = 0;
+	public int checkActive9 = 0;
 
 	public int checkActiveUpgrade1 = 0;
 	public int checkActiveUpgrade2 = 0;
@@ -32,6 +36,7 @@ public class EnebleItem : MonoBehaviour {
 	public GameObject item6;
 	public GameObject item7;
 	public GameObject item8;
+	public GameObject item9;
 
 	public GameObject Upgrade1;
 	public GameObject Upgrade2;
@@ -43,7 +48,8 @@ public class EnebleItem : MonoBehaviour {
 	public GameObject Upgrade8;
 
 	void Start () {
-		item1.SetActive (false);
+        if (Application.loadedLevel != 2) {
+            item1.SetActive (false);
 		item2.SetActive (false);
 		item3.SetActive (false);
 		item4.SetActive (false);
@@ -51,6 +57,7 @@ public class EnebleItem : MonoBehaviour {
 		item6.SetActive (false);
 		item7.SetActive (false);
 		item8.SetActive (false);
+		item9.SetActive (false);
 
 		Upgrade1.SetActive (false);
 		Upgrade2.SetActive (false);
@@ -60,10 +67,12 @@ public class EnebleItem : MonoBehaviour {
 		Upgrade6.SetActive (false);
 		Upgrade7.SetActive (false);
 		Upgrade8.SetActive (false);
-	}
+        }
+    }
 
 	void Update () {
-		EnableItems ();
+        if (Application.loadedLevel != 2) {
+            EnableItems ();
 		CheckEnableItems ();
 		CheckEnableItems2 ();
 		CheckEnableItems3 ();
@@ -72,6 +81,7 @@ public class EnebleItem : MonoBehaviour {
 		CheckEnableItems6 ();
 		CheckEnableItems7 ();
 		CheckEnableItems8 ();
+		CheckEnableItems9 ();
 
 		EnableUpgrades ();
 		CheckEnableUpgrades ();
@@ -82,12 +92,19 @@ public class EnebleItem : MonoBehaviour {
 		CheckEnableUpgrades6 ();
 		CheckEnableUpgrades7 ();
 		CheckEnableUpgrades8 ();
-	}
+        }
+    }
 
 	public void EnableItems() {
-		if (checkActive1 == 1) {
+        if (Application.loadedLevel != 2) {
+            if (checkActive1 == 1) {
 			item1.SetActive (true);
-		}
+
+            if (oneTime == false) { 
+            showSwipe.EnableSwipe();
+                oneTime = true;
+            }
+        }
 		if (checkActive2 == 1) {
 			item2.SetActive (true);
 		}
@@ -109,13 +126,17 @@ public class EnebleItem : MonoBehaviour {
 		if (checkActive8 == 1) {
 			item8.SetActive (true);
 		}
+		if (checkActive9 == 1) {
+			item9.SetActive (true);
+            }
+        }
 	}
 
 
 	public void CheckEnableItems (){
-		if (goldEnable.totalClicks >= 5f) {
-			checkActive1 = 1;
-		}
+        if (goldEnable.totalClicks >= 5f) {
+		    checkActive1 = 1;   
+        }
 	}
 	public void CheckEnableItems2() {
 		if (goldEnable.totalClicks >= 50f) {
@@ -148,8 +169,13 @@ public class EnebleItem : MonoBehaviour {
 		}
 	}
 	public void CheckEnableItems8(){
-		if (goldEnable.totalClicks >= 4000f) {
+		if (goldEnable.totalClicks >= 3000f) {
 			checkActive8 = 1;
+		}
+	}
+	public void CheckEnableItems9(){
+		if (goldEnableGold.gold >= 100000f) {
+			checkActive9 = 1;
 		}
 	}
 
@@ -202,12 +228,12 @@ public class EnebleItem : MonoBehaviour {
 		}
 	}
 	public void CheckEnableUpgrades5(){
-		if (goldEnable.totalClicks >= 1400f) {
+		if (goldEnable.totalClicks >= 1500f) {
 			checkActiveUpgrade5 = 1;
 		}
 	}
 	public void CheckEnableUpgrades6(){
-		if (goldEnable.totalClicks >= 5000f) {
+		if (goldEnable.totalClicks >= 2300f) {
 			checkActiveUpgrade6 = 1;
 		}
 	}
